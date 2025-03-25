@@ -79,21 +79,29 @@ Console.WriteLine("========================Exercice Palindromes-Word ===========
 //string mot = "radar";
 //string mot2 = "Noon";
 //string mot3 = "mom";
-string word =Console.ReadLine().ToLower();
+string word = Console.ReadLine().ToLower();
 int leftCount = 0;
 int rightCount = word.Length - 1;
-for (int i = 0; i < word.Length / 2; i++)
+bool isPalindrome = true; // Ajout d'un indicateur
+
+for (int i = 0; i < word.Length; i++)
 {
     if (word[leftCount] != word[rightCount])
     {
         Console.WriteLine("Ce mot n'est pas un palindrome");
+        isPalindrome = false; // Indiquer que ce n'est pas un palindrome
         break;
     }
-    
+
     leftCount++;
     rightCount--;
 }
-Console.WriteLine("Ce mot est un palindrome");
+
+// Afficher le message seulement si c'est un palindrome
+if (isPalindrome)
+{
+    Console.WriteLine("Ce mot est un palindrome");
+}
 Console.WriteLine("========================String-Builder ============");
         //string str="Hassan";
         //Console.WriteLine(str.Trim());
