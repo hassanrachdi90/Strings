@@ -12,3 +12,4 @@ C:\Users\hassa\Desktop\Strings\obj\Debug\net9.0\refint\Strings.dll
 C:\Users\hassa\Desktop\Strings\obj\Debug\net9.0\Strings.pdb
 C:\Users\hassa\Desktop\Strings\obj\Debug\net9.0\Strings.genruntimeconfig.cache
 C:\Users\hassa\Desktop\Strings\obj\Debug\net9.0\ref\Strings.dll
+C:\Users\hassa\Desktop\Strings\obj\Debug\net9.0\Strings.sourcelink.json

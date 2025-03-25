@@ -70,7 +70,11 @@ Console.WriteLine(texte.Trim('B', '.')); // Affiche "onjour, je suis Hassan"
 Console.WriteLine(texte.Length); // Affiche 21
 Console.WriteLine(texte[0]); // Affiche 'B'
 string[] texte1 = texte.Split(',');
-Console.WriteLine(texte1);
+foreach (var mot in texte1)
+        {
+            Console.WriteLine(mot);
+        }
+//Console.WriteLine(texte1);
 Console.WriteLine("========================Exercice Palindromes-Word ============");
 //string mot = "radar";
 //string mot2 = "Noon";
@@ -114,10 +118,12 @@ Console.WriteLine($"date: {date:MM}");
 Console.WriteLine($"date: {date:yyyy}");
 Console.WriteLine($"date: {date:dd:MM:yyyy}");
 Console.WriteLine($"date: {date:hh:mm:ss}");
-double price =2555.57;
+double price =2555.574;
 Console.WriteLine($"Prix: {price:C}");
 Console.WriteLine($"Prix: {price:P}");
 Console.WriteLine($"Prix: {price:#####.#}");
+Console.WriteLine($"Prix: {price:F2}");
+
 
 
 
